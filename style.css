@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+}
+.menu-area ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: tomato;
+}
+.menu-area ul li {
+    display: inline-block;
+    position: relative;
+}
+.menu-area ul li a {
+    display: block;
+    padding: 20px 25px;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+.menu-area ul li ul.dropdown li {
+    display: block;
+}
+.menu-area ul li ul.dropdown {
+    width: 100%;
+    background: red;
+    position: absolute;
+    z-index: 5;
+    display: none;
+}
+.menu-area ul li a:hover {
+    background: #112c66;
+}
+.menu-area ul li:hover ul.dropdown {
+    display: block;
+} 
+.menu-area ul li ul.dropdown > li > a {
+    font-size: 17px;
+}
